@@ -10,12 +10,11 @@ In this application architecture, the JwtAuthenticationFilter intercepts incomin
 
 ## Data Models
 - **User:**
-  - Fields:
-    - Firstname: String
-    - Lastname: String
-    - Email: String
-    - Password: String (encoded)
-    - Role: Enum (USER, ADMIN)
+  - Firstname: String
+  - Lastname: String
+  - Email: String
+  - Password: String (encoded)
+  - Role: Enum (USER, ADMIN)
 
 ## Endpoints Overview
 
