@@ -62,3 +62,13 @@ The application provides the following endpoints for user registration and authe
    - Method: `GET`
    - Description: A demo endpoint for testing purposes.
 
+
+## Clone
+If you want to use or modify this app:
+
+1. Clone the project repository.
+2. Ensure that PostgreSQL is installed and running.
+3. Update the database configuration in `application.properties` file if necessary.
+4. Run the application with your favorite IDE (preferred IntelliJ IDEA)
+5. Test the application with testing tools like postman or by sending HTTP requests directly from your client application.
+
