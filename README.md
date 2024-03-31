@@ -5,6 +5,8 @@ This Spring Boot JWT Authentication API provides endpoints for user registration
 
 ## Architecture and Flow
 <img width="606" alt="jwtservicee" src="https://github.com/Jonathanpangkey/jwtauth_springboot/assets/102292312/3c646c86-c4f3-4628-8654-8ea3d201788c">
+<br /> <br />
+In a Spring application, the JWT authentication filter is the initial point of execution. It validates the JWT token, starting by checking if the token is present. If missing, it sends a 403 response. Next, it fetches user details from the database based on the token's subject (user email). If the user doesn't exist, it returns a 403; otherwise, it proceeds to validate the token against the user. If the token is invalid (expired or not for that user), it sends a 403; otherwise, it updates the security context holder, marking the user as authenticated. This allows subsequent filters to recognize the authenticated user. Finally, the request is dispatched to the controller for further processing, such as accessing services or databases, and generating a response. This flow ensures secure authentication and access control within the application.
 
 ## Data Models
 - **User:**
