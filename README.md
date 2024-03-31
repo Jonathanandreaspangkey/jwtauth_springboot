@@ -5,8 +5,6 @@ This Spring Boot JWT Authentication API provides endpoints for user registration
 
 ## Architecture and Flow
 <img width="606" alt="jwtservicee" src="https://github.com/Jonathanpangkey/jwtauth_springboot/assets/102292312/3c646c86-c4f3-4628-8654-8ea3d201788c">
-<br/> <br/>
-In this application architecture, the JwtAuthenticationFilter intercepts incoming HTTP requests to extract and validate JWT tokens, setting up Spring Security's authentication context if valid. JwtService provides methods for JWT token generation, parsing, and validation. The UserDetailsService interface retrieves user details for authentication, while the AuthenticationController exposes HTTP endpoints for user registration and authentication, delegating processing to the AuthenticationService, which handles business logic.
 
 ## Data Models
 - **User:**
